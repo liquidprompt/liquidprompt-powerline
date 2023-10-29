@@ -6,15 +6,12 @@
 exec shellcheck \
   --shell=bash \
   --exclude=SC2155 \
-  --external-sources --check-sourced \
-  tools/* \
+  --external-sources \
   "$0" # Include this script to get the below imports
 
 
 . ./liquidprompt
 
-. ./themes/alternate_vcs/alternate_vcs.theme
-. ./themes/powerline/powerline.theme
-. ./themes/unfold/unfold.theme
+. ./powerline.theme
 
 # vim: ft=sh et sts=2 sw=2 tw=120
