@@ -18,8 +18,8 @@ import time
 
 # -- Project information -----------------------------------------------------
 
-project = 'Liquid Prompt'
-copyright = '2011-%s, Liquid Prompt team' % time.strftime('%Y')
+project = 'Liquid Prompt Powerline theme'
+copyright = '2020-%s, Liquid Prompt team' % time.strftime('%Y')
 author = 'Mark Vander Stel'
 
 
@@ -30,18 +30,9 @@ author = 'Mark Vander Stel'
 # ones.
 extensions = [
     'sphinx_rtd_theme',
+    'sphinx.ext.intersphinx',
     'sphinxcontrib.spelling',
 ]
-
-# This value determines how to group the document tree into manual pages
-man_pages = [
-    ('functions', 'liquidprompt', 'Liquid Prompt functions', [], 3),
-    ('config', 'liquidprompt', 'Liquid Prompt configuration', [], 5),
-    ('theme', 'liquidprompt', 'Liquid Prompt theming', [], 7),
-]
-
-# A URL to cross-reference manpage directives
-manpages_url = 'https://manpages.debian.org/{path}'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
@@ -50,14 +41,17 @@ exclude_patterns = ['_build', 'venv', 'Thumbs.db', '.DS_Store']
 
 highlight_language = 'shell'
 
+# Enable linking to Liquid Prompt documentation by reference.
+intersphinx_mapping = {
+    'liquidprompt': ('https://liquidprompt.readthedocs.io/en/stable',
+        ('../../liquidprompt/docs/_build/html/objects.inv', None)),
+}
+
 # -- Options for HTML output -------------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 html_theme = 'sphinx_rtd_theme'
-
-# Adds a logo to the navbar.
-html_logo = 'liquidprompt_emblem.svg'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -68,13 +62,6 @@ html_static_path = ['_static']
 # # or fully qualified paths (eg. https://...)
 html_css_files = [
      'liquid.css',
-]
-
-# linkchecker dislikes anchor tags in github links: https://github.com/sphinx-doc/sphinx/issues/9016
-# breezy-vcs.org has been having intermittent dns problems ("Temporary failure in name # resolution") for a while now
-linkcheck_ignore = [
-        r'^https://github.com/rcaloras/bash-preexec/blob/master/README.md#install$',
-        r'^https://www.breezy-vcs.org/$'
 ]
 
 nitpick_ignore_regex = [
