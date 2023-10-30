@@ -1,10 +1,13 @@
-Powerline Full
+
+.. _powerline_plus:
+
+Powerline Plus
 **************
 
 .. contents::
    :local:
 
-An extension of the :doc:`powerline` theme, ``powerline_full`` includes all data
+An extension of the :doc:`powerline` theme, ``powerline_plus`` includes all data
 sources that Liquid Prompt provides. The ordering is the same as the default
 theme.
 
