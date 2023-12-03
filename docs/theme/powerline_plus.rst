@@ -1,6 +1,3 @@
-
-.. _powerline_plus:
-
 Powerline Plus
 **************
 
@@ -44,9 +41,9 @@ All Liquid Prompt config options are respected, **except for**:
 
 * :attr:`LP_COLOR_AWS_PROFILE`
 * :attr:`LP_COLOR_CONTAINER`
-* "attr:`LP_COLOR_CMAKE_DEBUG`
-* "attr:`LP_COLOR_CMAKE_RELEASE`
-* "attr:`LP_COLOR_CMAKE_RWDI`
+* :attr:`LP_COLOR_CMAKE_DEBUG`
+* :attr:`LP_COLOR_CMAKE_RELEASE`
+* :attr:`LP_COLOR_CMAKE_RWDI`
 * :attr:`LP_COLOR_DIRSTACK`
 * :attr:`LP_COLOR_ERR`
 * :attr:`LP_COLOR_ENV_VARS_UNSET`

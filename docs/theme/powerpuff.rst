@@ -1,12 +1,9 @@
-
-.. _powerpuff:
-
 Powerpuff
 *********
 
-This ``powerpuff`` theme go even further in rearranging the sections of the :ref:`Powerline Plus <powerline_plus>` theme:
+    This ``powerpuff`` theme go even further in rearranging the sections of the :doc:`powerline_plus` theme:
 
-- Data sections are spraid on two rows,
+- Data sections are spread on two rows,
 - each of which has a left-aligned and a right-aligned section.
 - A third row hosts the actual interactive prompt.
 - A horizontal line link the left and right sections of the first line.
@@ -37,5 +34,5 @@ When Liquid Prompt is displaying nearly everything, it may look like this:
 Setup & Configuration
 =====================
 
-This theme as the same core configuration than the :ref:`Power2lines <power2lines>` theme.
+This theme as the same core configuration than the :doc:`power2lines` theme.
 

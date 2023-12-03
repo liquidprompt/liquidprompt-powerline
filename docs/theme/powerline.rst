@@ -1,6 +1,3 @@
-
-.. _powerline:
-
 Powerline
 *********
 
@@ -41,18 +38,7 @@ When Liquid Prompt is displaying nearly everything, it may look like this:
    The above "everything" image looks like it is missing some parts because this
    theme does not implement all data sources of Liquid Prompt. This is by design
    to clone basic Powerline. For a Powerline theme that does show all data
-   sources, see :ref:`Powerline Plus <powerline_full>` below.
-
-Setup
-=====
-
-By default, the dividers and markers used are the Powerline private characters.
-You will either need a compatible font, or to configure the dividers and markers
-to use other characters.
-
-See the `Powerline Fonts installation docs`_ for help.
-
-.. _`Powerline fonts installation docs`: https://powerline.readthedocs.io/en/latest/installation.html#fonts-installation
+   sources, see :doc:`powerline_plus`.
 
 Configuration
 =============
