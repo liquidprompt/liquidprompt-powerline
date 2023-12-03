@@ -496,7 +496,7 @@ __powerline_section_arrow() {  # foreground_color, background_color, _, _, _, fa
     if [[ -n ${first_section-} ]]; then
         local lp_terminal_format
         # Test if the color is the same than previous one.
-        if [[ "${_lp_last_ab_color}" -eq "${2}" ]]; then
+        if [[ "${_lp_last_ab_color}" -eq "${2-}" ]]; then
             # Insert a soft sep using the fg color.
             lp_terminal_format "${1-}" "${2-}" 0 0 -1 "${6-}"
             section_arrow="${lp_terminal_format}${POWERLINE_SOFT_DIVIDER}"
@@ -688,7 +688,7 @@ _lp_powerpuff_theme_prompt() {
     local right_sections="${powerline_sections}\r" # FIXME spacing problem
 
     lp_terminal_format "${POWERLINE_LINE_COLOR[@]}"
-    _lp_fill "$left_sections" "$right_sections" "${lp_terminal_format}─"
+    _lp_fill "${left_sections}${lp_terminal_format}" "${NO_COL}${right_sections}" "─" 0
     first_line="$lp_fill"
 
     # Second line.
