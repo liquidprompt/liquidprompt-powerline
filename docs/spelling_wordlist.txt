@@ -1,11 +1,13 @@
-GitHub
-Kubernetes
-Powerline
-Terraform
 chroot
 config
+CMake
+GitHub
 hostname
 js
+Kubernetes
+Powerpuff
+Powerline
 runtime
+Terraform
 username
 workspace

@@ -11,4 +11,6 @@ Powerline style.
 
    install
    theme/powerline
-   theme/powerline_full
+   theme/powerline_plus
+   theme/power2lines
+   theme/powerpuff
