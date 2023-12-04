@@ -1,6 +1,9 @@
 Powerline
 *********
 
+.. contents::
+   :local:
+
 The ``powerline`` theme is a clone of the `Powerline prompt`_. It copies the
 `default segments`_ of the Powerline prompt for Shell.
 

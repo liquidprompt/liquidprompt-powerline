@@ -1,9 +1,12 @@
 Power2lines
 ***********
 
-This ``power2line`` theme rearranges the sections of :doc:`powerline_plus`, but on two rows instead of one.
-That is, the data sections are displayed on a first row, and the interactive prompt forms a second row.
-This gives room for long command lines, and let the user find the prompt always at the same location.
+This ``power2line`` theme rearranges the sections of :doc:`powerline_plus`,
+but on two rows instead of one.
+That is, the data sections are displayed on a first row, and the interactive
+prompt forms a second row.
+This gives room for long command lines, and let the user find the prompt always
+at the same location.
 
 
 Preview

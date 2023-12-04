@@ -1,7 +1,8 @@
 Powerpuff
 *********
 
-    This ``powerpuff`` theme go even further in rearranging the sections of the :doc:`powerline_plus` theme:
+This ``powerpuff`` theme go even further in rearranging the sections of the
+:doc:`powerline_plus` theme:
 
 - Data sections are spread on two rows,
 - each of which has a left-aligned and a right-aligned section.
@@ -9,9 +10,10 @@ Powerpuff
 - A horizontal line link the left and right sections of the first line.
 - A new line is drawn before the first row.
 
-The meta-sections are thus less prone to move around when more data is displayed,
-and the user will find it easier to spot new information.
-The horizontal line and the new line gap also helps in parsing screens with a lot of history.
+The meta-sections are thus less prone to move around when more data is
+displayed, and the user will find it easier to spot new information.
+The horizontal line and the new line gap also helps in parsing screens with a
+lot of history.
 
 
 Preview

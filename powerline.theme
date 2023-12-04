@@ -579,7 +579,9 @@ _lp_power2lines_theme_prompt() {
     local lp_terminal_format
     _lp_powerline_plus_theme_prompt
     lp_terminal_format "${POWERLINE_LINE_COLOR[@]}"
-    PS1="${lp_terminal_format}╭╢${NO_COL}$PS1\n${lp_terminal_format}╰╴${NO_COL}"
+    local n
+    n=$'\n'
+    PS1="${lp_terminal_format}╭╢${NO_COL}$PS1${n}${lp_terminal_format}╰╴${NO_COL}"
 }
 
 _lp_powerpuff_theme_activate() {
@@ -685,7 +687,8 @@ _lp_powerpuff_theme_prompt() {
     __powerline_section "$jobs_string" "${POWERLINE_JOBS_COLOR[@]}"
     __powerpuff_end_terminator
 
-    local right_sections="${powerline_sections}\r" # FIXME spacing problem
+    # local right_sections="${powerline_sections}\r" # FIXME spacing problem
+    local right_sections="${powerline_sections}" # FIXME spacing problem
 
     lp_terminal_format "${POWERLINE_LINE_COLOR[@]}"
     _lp_fill "${left_sections}${lp_terminal_format}" "${NO_COL}${right_sections}" "─" 0
@@ -805,5 +808,7 @@ _lp_powerpuff_theme_prompt() {
 
     # Third line.
     lp_terminal_format "${POWERLINE_LINE_COLOR[@]}"
-    PS1="\n${first_line}\n${second_line}\n${lp_terminal_format}╰╼${NO_COL}${POWERLINE_SPACER}"
+    local n
+    n=$'\n'
+    PS1="${n}${first_line}${n}${second_line}${n}${lp_terminal_format}╰╼${NO_COL}${POWERLINE_SPACER}"
 }
