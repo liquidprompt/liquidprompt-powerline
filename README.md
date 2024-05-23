@@ -17,12 +17,12 @@ Below are screenshots of typical states that you would see in everyday use.
 
 ## Documentation
 
-[![Documentation Status](https://readthedocs.org/projects/liquidprompt-powerline/badge/?version=stable)](https://liquidprompt-powerline.readthedocs.io/)
+[![Documentation Status](https://readthedocs.org/projects/liquid-prompt-powerline/badge/?version=stable)](https://liquid-prompt-powerline.readthedocs.io/)
 
 See the [Liquid Prompt documentation](https://liquidprompt.readthedocs.io/) for
 details on installing and configuring Liquidprompt.
 
-See the [Liquid Prompt Powerline documentation](https://liquidprompt-powerline.readthedocs.io/) for
+See the [Liquid Prompt Powerline documentation](https://liquid-prompt-powerline.readthedocs.io/) for
 details on installing this theme.
 
 
