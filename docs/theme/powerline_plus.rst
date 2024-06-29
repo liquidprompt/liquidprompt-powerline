@@ -1,10 +1,10 @@
-Powerline Full
+Powerline Plus
 **************
 
 .. contents::
    :local:
 
-An extension of the :doc:`powerline` theme, ``powerline_full`` includes all data
+An extension of the :doc:`powerline` theme, ``powerline_plus`` includes all data
 sources that Liquid Prompt provides. The ordering is the same as the default
 theme.
 
@@ -41,8 +41,13 @@ All Liquid Prompt config options are respected, **except for**:
 
 * :attr:`LP_COLOR_AWS_PROFILE`
 * :attr:`LP_COLOR_CONTAINER`
+* :attr:`LP_COLOR_CMAKE_DEBUG`
+* :attr:`LP_COLOR_CMAKE_RELEASE`
+* :attr:`LP_COLOR_CMAKE_RWDI`
 * :attr:`LP_COLOR_DIRSTACK`
 * :attr:`LP_COLOR_ERR`
+* :attr:`LP_COLOR_ENV_VARS_UNSET`
+* :attr:`LP_COLOR_ENV_VARS_SET`
 * :attr:`LP_COLOR_HOST`
 * :attr:`LP_COLOR_IN_MULTIPLEXER`
 * :attr:`LP_COLOR_JOB_D`
@@ -52,6 +57,7 @@ All Liquid Prompt config options are respected, **except for**:
 * :attr:`LP_COLOR_MARK_ROOT`
 * :attr:`LP_COLOR_MARK_SUDO`
 * :attr:`LP_COLOR_MARK`
+* :attr:`LP_COLOR_MODULES`
 * :attr:`LP_COLOR_NODE_VENV`
 * :attr:`LP_COLOR_NOWRITE`
 * :attr:`LP_COLOR_PATH_ROOT`
@@ -78,11 +84,16 @@ All Liquid Prompt config options are respected, **except for**:
 * :attr:`LP_MARK_BRACKET_CLOSE`
 * :attr:`LP_MARK_BRACKET_OPEN`
 * :attr:`LP_MARK_BZR`
+* :attr:`LP_MARK_CMAKE`
 * :attr:`LP_MARK_DEFAULT`
 * :attr:`LP_MARK_DISABLED`
 * :attr:`LP_MARK_FOSSIL`
 * :attr:`LP_MARK_GIT`
 * :attr:`LP_MARK_HG`
+* :attr:`LP_MARK_MODULES_OPEN`
+* :attr:`LP_MARK_MODULES_SEP`
+* :attr:`LP_MARK_MODULES_CLOSE`
+* :attr:`LP_MARK_OS_SEP`
 * :attr:`LP_MARK_PERM`
 * :attr:`LP_MARK_PREFIX`
 * :attr:`LP_MARK_PROXY`
@@ -92,7 +103,7 @@ All Liquid Prompt config options are respected, **except for**:
 Theme Configuration
 -------------------
 
-Powerline Full uses all the config options of the :doc:`powerline` theme,
+Powerline Plus uses all the config options of the :doc:`powerline` theme,
 **except for**:
 
 * :attr:`POWERLINE_STASH_MARKER`
@@ -100,7 +111,7 @@ Powerline Full uses all the config options of the :doc:`powerline` theme,
 * :attr:`POWERLINE_VCS_MARKER`
 * :attr:`POWERLINE_VCS_STASH_COLOR`
 
-Powerline Full adds these config options:
+Powerline Plus adds these config options:
 
 Markers
 _______
@@ -184,6 +195,12 @@ ______
 
    Color for the chroot section.
 
+.. attribute:: POWERLINE_CMAKE_COLOR
+   :type: array<int>
+   :value: (0, 123, 0, 0, 0, 10)
+
+   Color for the CMake section.
+
 .. attribute:: POWERLINE_CONTAINER_COLOR
    :type: array<int>
    :value: $POWERLINE_NEUTRAL_COLOR
@@ -195,6 +212,18 @@ ______
    :value: $POWERLINE_NEUTRAL_COLOR
 
    Color for the directory stack section.
+
+.. attribute:: POWERLINE_ENV_VARS_COLOR_SET
+   :type: array<int>
+   :value: (0 250 0 0 0 13)
+
+   Color for segment of user-defined environment variables that are set.
+
+.. attribute:: POWERLINE_ENV_VARS_COLOR_UNSET
+   :type: array<int>
+   :value: (7 246 0 0 7 5)
+
+   Color for segment of user-defined environment variables that are unset.
 
 .. attribute:: POWERLINE_KUBECONTEXT_COLOR
    :type: array<int>
@@ -208,6 +237,12 @@ ______
 
    Color for the CPU load section.
 
+.. attribute:: POWERLINE_MODULES_COLOR
+   :type: array<int>
+   :value: (0 158 0 0 0 10)
+
+   Color for the Environment Modules section.
+
 .. attribute:: POWERLINE_NEUTRAL_COLOR
    :type: array<int>
    :value: (252, 234, 0, 0, 7, 0)
@@ -220,6 +255,12 @@ ______
    :value: $POWERLINE_PYTHON_ENV_COLOR
 
    Color for the Node.js environment section.
+
+.. attribute:: POWERLINE_OS_COLOR
+   :type: array<int>
+   :value: (0 194 0 0 0 10)
+
+   Color for the Operating System section.
 
 .. attribute:: POWERLINE_PROXY_COLOR
    :type: array<int>
