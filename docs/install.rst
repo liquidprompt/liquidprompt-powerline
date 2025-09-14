@@ -18,7 +18,7 @@ Install with Git
 
 To download to ``~/liquidprompt-powerline``, run::
 
-   git clone --branch stable https://github.com/liquidprompt/liquidprompt-powerline.git ~/liquidprompt-powerline
+   git clone --branch main https://github.com/liquidprompt/liquidprompt-powerline.git ~/liquidprompt-powerline
 
 Or, if you want to use the development (non-stable) branch::
 
@@ -33,7 +33,7 @@ gzip format directly from the `release page
 
 Alternatively, you can download the theme file directly::
 
-   https://raw.githubusercontent.com/liquidprompt/liquidprompt-powerline/stable/powerline.theme
+   https://raw.githubusercontent.com/liquidprompt/liquidprompt-powerline/main/powerline.theme
 
 Or, if you want to use the development (non-stable) branch::
 
